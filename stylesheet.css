@@ -1,0 +1,13 @@
+@import url(https://fonts.google.com/specimen/SN+Pro?categoryFilters=Sans+Serif:%2FSans%2FRounded);
+
+:root {
+    --ink: #23342a;
+    --muted: #6f7d72;
+    --green: #2d6547;
+    --green-dark: #214d36;
+    --lime: #d9ec9b;
+    --cream: #fbf9f2;
+    --white: #fff;
+    --line: #e7e8df;
+    --orange: #ed9d5b;
+}

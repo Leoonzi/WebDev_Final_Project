@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Log in | Campus Bites</title>
+
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="nav-wrap" aria-label="Main navigation">
+            <a class="brand" href="home.html">campus<span>bites</span></a>
+            <ul class="header-nav">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a class="login-link" href="login.html">Log in</a><a class="register-link"
+                    href="register.html">Join</a><a class="cart-link" href="cart.html">Cart</a>
+            </div>
+        </nav>
+    </header>
+    <main class="auth-page">
+        <div class="auth-layout">
+            <aside class="auth-aside">
+                <div>
+                    <p class="eyebrow">Welcome back</p>
+                    <h2>Your next good break starts here.</h2>
+                    <p>
+                        Sign in to pick up where you left off and find something tasty for
+                        your day.
+                    </p>
+                </div>
+            </aside>
+            <section class="form-card">
+                <h1>Log in</h1>
+                <p class="lead">Enter your account details to continue.</p>
+                <form action="#" method="get">
+                    <div class="field">
+                        <label for="username">Username</label><input id="username" name="username" type="text"
+                            placeholder="Your username" required />
+                    </div>
+                    <div class="field">
+                        <label for="password">Password</label><input id="password" name="password" type="password"
+                            placeholder="Your password" required />
+                    </div>
+                    <button class="button button-primary" type="submit">Log in</button>
+                </form>
+                <p class="form-foot">
+                    New to Campus Bites? <a href="register.html">Create an account</a>
+                </p>
+            </section>
+        </div>
+    </main>
+    <footer class="site-footer">
+        Campus Bites · A student-made concept for happier campus breaks.
+    </footer>
+</body>
+
+</html>
