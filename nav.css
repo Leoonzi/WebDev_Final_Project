@@ -1,0 +1,32 @@
+@import url(https://fonts.google.com/specimen/SN+Pro?categoryFilters=Sans+Serif:%2FSans%2FRounded);
+
+.nav-wrap {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    float: left;
+    font-family: 'SN Pro', sans-serif;
+}
+
+.nav-wrap a {
+    text-decoration: none;
+}
+
+.nav-wrap ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav-wrap ul li, .brand, .nav-action, .nav-action a {
+    position: relative;
+    float: left;
+    padding: 13px;
+}

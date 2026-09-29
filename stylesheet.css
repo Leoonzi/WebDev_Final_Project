@@ -1,5 +1,6 @@
 @import url(https://fonts.google.com/specimen/SN+Pro?categoryFilters=Sans+Serif:%2FSans%2FRounded);
 
+/*
 :root {
     --ink: #23342a;
     --muted: #6f7d72;
@@ -10,4 +11,45 @@
     --white: #fff;
     --line: #e7e8df;
     --orange: #ed9d5b;
+}
+    */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'SN Pro', sans-serif ;
+}
+
+/*HOME*/
+
+.message {
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    padding-top: 44px;
+    padding-right: 28px;
+    padding-bottom: 54px;
+    padding-left: 28px;
+}
+
+.message a {
+    text-decoration: none;
+    padding: 8px;
+    margin: 10px;
+}
+
+.section {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 38px;
+}
+
+/*FOOTER*/
+.site-footer {
+    padding: 24px;
+    font-size: 13px;
+    text-align: center;
 }
