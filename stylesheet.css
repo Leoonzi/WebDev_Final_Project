@@ -26,13 +26,36 @@ body {
 /*HOME*/
 
 .message {
-    min-height: 40vh;
+    min-height: 20vh;
+    margin: 0;
     display: flex;
     align-items: center;
     padding-top: 44px;
     padding-right: 28px;
     padding-bottom: 54px;
     padding-left: 28px;
+}
+
+.container-message-grid div{
+    width: 50vh;
+}
+
+.container-message-grid {
+    padding-left: 50vh;
+}
+
+.eyebrow {
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 60px;
+
+}
+
+.eyebrow, h1, .lead{
+    margin: 0;
+    margin-bottom: 20px;
 }
 
 .message a {
