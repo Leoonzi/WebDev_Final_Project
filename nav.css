@@ -1,32 +1,112 @@
-@import url(https://fonts.google.com/specimen/SN+Pro?categoryFilters=Sans+Serif:%2FSans%2FRounded);
-
-.nav-wrap {
+.site-header {
     position: sticky;
     top: 0;
-    width: 100%;
     z-index: 10;
+    border-bottom: 1px solid var(--line);
+    background: rgba(251, 249, 242, .96);
+    backdrop-filter: blur(10px);
+}
+
+.nav-wrap {
     display: flex;
-    justify-content: space-around;
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 20px;
-    float: left;
-    font-family: 'SN Pro', sans-serif;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+    width: min(1120px, calc(100% - 32px));
+    min-height: 68px;
+    margin: 0 auto;
 }
 
 .nav-wrap a {
+    color: var(--ink);
     text-decoration: none;
 }
 
-.nav-wrap ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+.brand {
+    flex: 0 0 auto;
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: -.7px;
 }
 
-.nav-wrap ul li, .brand, .nav-action, .nav-action a {
-    position: relative;
-    float: left;
-    padding: 13px;
+.brand span {
+    color: var(--green);
+}
+
+.nav-wrap ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-wrap ul a {
+    color: var(--muted);
+    font-size: .94rem;
+    font-weight: 600;
+}
+
+.nav-wrap ul a:hover,
+.nav-action a:hover {
+    color: var(--green);
+}
+
+.nav-action {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-action a {
+    padding: 8px 11px;
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.nav-action .register-link {
+    border-radius: 22px;
+    background: var(--green);
+    color: white;
+}
+
+.nav-action .cart-link {
+    border: 1px solid var(--line);
+    border-radius: 22px;
+}
+
+@media (max-width: 760px) {
+    .nav-wrap {
+        gap: 8px;
+        padding: 10px 0;
+    }
+
+    .nav-wrap ul {
+        gap: 14px;
+    }
+
+    .nav-action {
+        gap: 3px;
+    }
+
+    .nav-action a {
+        padding: 7px 8px;
+    }
+}
+
+@media (max-width: 520px) {
+    .nav-wrap {
+        justify-content: center;
+    }
+
+    .nav-wrap ul {
+        order: 3;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .nav-action {
+        margin-left: auto;
+    }
 }
